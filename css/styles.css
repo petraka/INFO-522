@@ -366,3 +366,13 @@ textarea {
 /* =============
     Footer
 ============= */
+.bigBox {
+  background-color: black;
+  width: 220px;
+  height: 150px;
+  border-width: 10px;
+  border-color: var(blue);
+  padding: 50px;
+  text-align: center;
+  margin: 50px;
+}
