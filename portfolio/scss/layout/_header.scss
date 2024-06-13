@@ -1,0 +1,9 @@
+/* =============
+    Header
+============= */
+
+.header{
+    display: grid;
+    grid-template-columns: 2 25%vw 75%vw;
+    grid-template-areas: 'myLogo name';
+}
