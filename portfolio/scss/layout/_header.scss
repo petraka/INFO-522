@@ -4,6 +4,15 @@
 
 .header{
     display: grid;
-    grid-template-columns: 2 25%vw 75%vw;
-    grid-template-areas: 'myLogo name';
+    grid-template-columns: repeat(2, 25%vw 75%vw);
+    grid-template-areas: 'myLogo myName';
+
+
+    .myLogo{
+        grid-area: myLogo;
+    }
+
+    .myName{
+        grid-area: myName;
+    }
 }
