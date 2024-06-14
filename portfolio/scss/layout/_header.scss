@@ -2,17 +2,21 @@
     Header
 ============= */
 
-.header{
+#myLogo{
+    border-radius: 50px;
+}
+
+header{
     display: grid;
-    grid-template-columns: repeat(2, 15%vw 85%vw);
-    grid-template-areas: 'myLogo myName';
+    grid-template-columns: 2;
+    grid-template-areas: "myLogo myName";
 
 
-    .myLogo{
+    #myLogo{
         grid-area: myLogo;
     }
 
-    .myName{
+    #myName{
         grid-area: myName;
     }
 }
