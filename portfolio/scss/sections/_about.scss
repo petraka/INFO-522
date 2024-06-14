@@ -1,0 +1,51 @@
+/* =============
+    About
+============= */
+
+.about{
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-areas: "aboutText pghImg";
+
+    #aboutText{
+        grid-area: aboutText;
+    }
+
+    #pghImg{
+        grid-area: pghImg;
+    }
+}
+
+
+.mediaList{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-areas: "sleepToken a7x ghibli pokemon";
+
+    #sleepToken{
+        grid-area: sleepToken;
+    }
+
+    #a7x{
+        grid-area: a7x;
+    }
+
+    #ghibli{
+        grid-area: ghibli;
+    }
+
+    #pokemon{
+        grid-area: pokemon;
+    }
+}
+
+
+.bookList{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

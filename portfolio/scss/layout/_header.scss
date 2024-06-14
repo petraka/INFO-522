@@ -3,14 +3,13 @@
 ============= */
 
 #myLogo{
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
-header{
+.header{
     display: grid;
     grid-template-columns: 2;
     grid-template-areas: "myLogo myName";
-
 
     #myLogo{
         grid-area: myLogo;

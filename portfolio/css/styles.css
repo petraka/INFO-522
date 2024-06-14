@@ -363,9 +363,98 @@ textarea {
 /* =============
     Header
 ============= */
+#myLogo {
+  border-radius: 20px;
+}
 
-
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2;
+  grid-template-columns: 2;
+      grid-template-areas: "myLogo myName";
+}
+.header #myLogo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: myLogo;
+}
+.header #myName {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: myName;
+}
 
 /* =============
     Footer
+============= */
+/* =============
+    About
+============= */
+.about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2;
+  grid-template-columns: 2;
+      grid-template-areas: "aboutText pghImg";
+}
+.about #aboutText {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: aboutText;
+}
+.about #pghImg {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: pghImg;
+}
+
+.mediaList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4;
+  grid-template-columns: 4;
+      grid-template-areas: "sleepToken a7x ghibli pokemon";
+}
+.mediaList #sleepToken {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: sleepToken;
+}
+.mediaList #a7x {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: a7x;
+}
+.mediaList #ghibli {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: ghibli;
+}
+.mediaList #pokemon {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: pokemon;
+}
+
+.bookList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* =============
+    Associations
+============= */
+/* =============
+    Contact
+============= */
+/* =============
+    Index
+============= */
+/* =============
+    Resume
 ============= */
