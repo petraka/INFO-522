@@ -334,28 +334,44 @@ template {
 /* =============
     Typography
 ============= */
-.quattrocento-sans-regular {
-  font-family: "Quattrocento Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+body {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
 }
 
-.quattrocento-sans-bold {
-  font-family: "Quattrocento Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0;
 }
 
-.quattrocento-sans-regular-italic {
-  font-family: "Quattrocento Sans", sans-serif;
-  font-weight: 400;
-  font-style: italic;
+p {
+  padding: 0;
+  margin: 0;
 }
 
-.quattrocento-sans-bold-italic {
-  font-family: "Quattrocento Sans", sans-serif;
-  font-weight: 700;
-  font-style: italic;
+.pageTitle {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  color: var(--blue);
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 32px;
+}
+@media (min-width: 768px) {
+  .pageTitle {
+    font-size: 3.75rem;
+  }
+}
+
+.contentSectionTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .contentSectionTitle {
+    font-size: 2rem;
+  }
 }
 
 /* =============
@@ -412,7 +428,7 @@ textarea {
 }
 
 #myName {
-  margin-left: 20px;
+  margin: 24px 0 24px 20px;
 }
 
 /* =============
