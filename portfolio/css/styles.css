@@ -13,6 +13,16 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --l5:#f5f7f8;
+  --l4:#dfe5e8;
+  --l3:#becbd2;
+  --l2:#9eb1bb;
+  --l1:#7d97a5;
+  --d1:#57707d;
+  --d2:#4d636f ;
+  --d3:#435761;
+  --d4:#3a4b53;
+  --d5:#303e45;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
