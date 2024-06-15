@@ -4,7 +4,7 @@
 
 .about{
     display: grid;
-    grid-template-columns: 2;
+    grid-template-columns: 25%vw 75%vw;
     grid-template-areas: "aboutText pghImg";
 
     #aboutText{
@@ -23,7 +23,7 @@
     margin: 0;
 
     display: grid;
-    grid-template-columns: 4;
+    grid-template-columns: 25%vw;
     grid-template-areas: "sleepToken a7x ghibli pokemon";
 
     #sleepToken{

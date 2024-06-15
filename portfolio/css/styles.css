@@ -334,6 +334,30 @@ template {
 /* =============
     Typography
 ============= */
+.quattrocento-sans-regular {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quattrocento-sans-bold {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.quattrocento-sans-regular-italic {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.quattrocento-sans-bold-italic {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
 /* =============
     Buttons
 ============= */
@@ -363,15 +387,12 @@ textarea {
 /* =============
     Header
 ============= */
-#myLogo {
-  border-radius: 20px;
-}
-
 .header {
+  margin-left: 10px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2;
-  grid-template-columns: 2;
+  -ms-grid-columns: 75px;
+  grid-template-columns: 75px;
       grid-template-areas: "myLogo myName";
 }
 .header #myLogo {
@@ -385,6 +406,15 @@ textarea {
   grid-area: myName;
 }
 
+#myLogo {
+  border-radius: 20px;
+  margin: 10px 0 10px 0;
+}
+
+#myName {
+  margin-left: 20px;
+}
+
 /* =============
     Footer
 ============= */
@@ -394,8 +424,8 @@ textarea {
 .about {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2;
-  grid-template-columns: 2;
+  -ms-grid-columns: 25% vw 75% vw;
+  grid-template-columns: 25% vw 75% vw;
       grid-template-areas: "aboutText pghImg";
 }
 .about #aboutText {
@@ -415,8 +445,8 @@ textarea {
   margin: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 4;
-  grid-template-columns: 4;
+  -ms-grid-columns: 25% vw;
+  grid-template-columns: 25% vw;
       grid-template-areas: "sleepToken a7x ghibli pokemon";
 }
 .mediaList #sleepToken {
