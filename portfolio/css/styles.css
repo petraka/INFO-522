@@ -19,7 +19,7 @@ html {
   --l2:#9eb1bb;
   --l1:#7d97a5;
   --d1:#57707d;
-  --d2:#4d636f ;
+  --d2:#4d636f;
   --d3:#435761;
   --d4:#3a4b53;
   --d5:#303e45;
@@ -359,31 +359,6 @@ p {
   margin: 0;
 }
 
-.pageTitle {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  color: var(--blue);
-  font-size: 2.5rem;
-  font-weight: 900;
-  margin-bottom: 32px;
-}
-@media (min-width: 768px) {
-  .pageTitle {
-    font-size: 3.75rem;
-  }
-}
-
-.contentSectionTitle {
-  font-size: 1.75rem;
-  font-weight: 600;
-  margin-bottom: 16px;
-}
-@media (min-width: 768px) {
-  .contentSectionTitle {
-    font-size: 2rem;
-  }
-}
-
 /* =============
     Buttons
 ============= */
@@ -410,9 +385,29 @@ textarea {
 /* =============
     Navigation
 ============= */
+nav {
+  width: 100%;
+  background-color: var(--d5);
+  color: var(--l4);
+}
+nav a {
+  float: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: var(--l4);
+  padding: 8px;
+}
+
 /* =============
     Header
 ============= */
+header {
+  background-color: var(--d5);
+  color: var(--l4);
+}
+
 .header {
   margin-left: 10px;
   display: -ms-grid;
@@ -434,7 +429,7 @@ textarea {
 
 #myLogo {
   border-radius: 20px;
-  margin: 10px 0 10px 0;
+  margin: 12px 0 12px 0;
 }
 
 #myName {
@@ -444,73 +439,55 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: var(--l5);
+}
+
 /* =============
     About
 ============= */
-.about {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 25% vw 75% vw;
-  grid-template-columns: 25% vw 75% vw;
-      grid-template-areas: "aboutText pghImg";
+body {
+  background-color: var(--l4);
+  color: var(--d5);
+}
+
+.about #pghImg {
+  width: 90%;
+  margin: 5%;
 }
 .about #aboutText {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: aboutText;
-}
-.about #pghImg {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: pghImg;
-}
-
-.mediaList {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 25% vw;
-  grid-template-columns: 25% vw;
-      grid-template-areas: "sleepToken a7x ghibli pokemon";
-}
-.mediaList #sleepToken {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: sleepToken;
-}
-.mediaList #a7x {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: a7x;
-}
-.mediaList #ghibli {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: ghibli;
-}
-.mediaList #pokemon {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-  grid-area: pokemon;
-}
-
-.bookList {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  display: block;
+  margin: 0 5% 5%;
 }
 
 /* =============
     Associations
 ============= */
+body {
+  background-color: var(--l4);
+  color: var(--d5);
+}
+
 /* =============
     Contact
 ============= */
+body {
+  background-color: var(--l4);
+  color: var(--d5);
+}
+
 /* =============
     Index
 ============= */
+body {
+  background-color: var(--l4);
+  color: var(--d5);
+}
+
 /* =============
     Resume
 ============= */
+body {
+  background-color: var(--l4);
+  color: var(--d5);
+}

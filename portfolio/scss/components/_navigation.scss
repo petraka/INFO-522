@@ -1,3 +1,19 @@
 /* =============
     Navigation
 ============= */
+
+nav{
+    width: 100%;
+    background-color: var(--d5);
+    color: var(--l4);
+
+    a{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: var(--l4);
+        padding: 8px;
+    }
+}
