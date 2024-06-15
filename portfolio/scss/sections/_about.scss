@@ -19,3 +19,41 @@ body{
 
     }
 }
+
+.media{
+    margin: 5%;
+}
+
+
+.mediaList{
+    list-style-type: none;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'sleepToken a7x'
+    'sleepToken ghibli'
+    'sleepToken pokemon';
+    gap: 8px;
+
+    #sleepToken{
+        grid-area: sleepToken;
+    }
+
+    #a7x{
+        grid-area: a7x;
+        width: 100%;
+    }
+
+    #ghibli{
+        grid-area: ghibli;
+        width: 100%;
+    }
+
+    #pokemon{
+        grid-area: pokemon;
+        width: 100%;
+    }
+}

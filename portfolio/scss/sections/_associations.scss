@@ -6,3 +6,30 @@ body{
     background-color: var(--l4);
     color: var(--d5)
 }
+
+.orgList{
+    list-style-type: none;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-areas:
+    'CLP ALA'
+    'IFLA SAA';
+
+    #ala{
+        grid-area: ALA;
+    }
+
+    #clp{
+        grid-area: CLP;
+    }
+
+    #ifla{
+        grid-area: IFLA;
+    }
+
+    #saa{
+        grid-area: SAA;
+    }
+}
