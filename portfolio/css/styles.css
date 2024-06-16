@@ -405,9 +405,6 @@ nav a {
   padding: 8px;
 }
 
-.sitemap {
-  size: 50px;
-}
 .sitemap a {
   color: var(--d5);
 }
