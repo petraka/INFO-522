@@ -22,19 +22,42 @@ p{
     "ALA CLP"
     "SAA IFLA";
 
+    @include md{
+        margin: 5% 10%;
+        gap: 40px;
+        grid-template-columns: 30% 70%;
+    }
+
     #ala{
         grid-area: ALA;
+
+        @include md{
+            line-height: 24px;
+        }
     }
 
     #clp{
         grid-area: CLP;
+
+        @include md{
+            line-height: 24px;
+            
+        }
     }
 
     #ifla{
         grid-area: IFLA;
+        
+        @include md{
+            line-height: 24px;
+        }
     }
 
     #saa{
         grid-area: SAA;
+      
+        @include md{
+            line-height: 24px;
+        }
     }
 }

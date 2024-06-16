@@ -9,11 +9,20 @@ body{
 
 .contact{
     margin: 5%;
+
+    @include md{
+        text-align: center;
+        line-height: 0px;
+    }
 }
 
 #emailText{
     text-align: center;
     margin-top: 10%;
+
+    @include md{
+        margin-top: 5%;
+    }
 }
 
 #email{
@@ -24,4 +33,9 @@ body{
     border: solid var(--d5) 2px;
     padding: 8px;
     margin: 5%;
+
+    @include md{
+        width: 20%;
+        margin: 3% 39%;
+    }
 }

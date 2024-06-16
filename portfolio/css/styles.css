@@ -394,6 +394,8 @@ nav {
   width: 100%;
   background-color: var(--d5);
   color: var(--l4);
+}
+nav a {
   float: none;
   display: block;
   width: 100%;
@@ -401,16 +403,6 @@ nav {
   text-decoration: none;
   color: var(--l4);
   padding: 8px;
-}
-@media (min-width: 768px) {
-  nav a {
-    text-decoration: none;
-    color: var(--l4);
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto;
-    grid-template-columns: auto;
-  }
 }
 
 /* =============
@@ -516,6 +508,37 @@ p {
   -ms-grid-column: 1;
   grid-area: pokemon;
 }
+@media (min-width: 768px) {
+  .mediaList {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+    grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "sleepToken pokemon" "sleepToken a7x" "sleepToken ghibli";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mediaList #sleepToken {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+  }
+  .mediaList #a7x {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  .mediaList #ghibli {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  .mediaList #pokemon {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+}
 
 .books {
   margin: 5% 5% 0 5%;
@@ -550,25 +573,53 @@ p {
   -ms-grid-rows: auto 20px auto;
       grid-template-areas: "ALA CLP" "SAA IFLA";
 }
+@media (min-width: 768px) {
+  .orgList {
+    margin: 5% 10%;
+    gap: 40px;
+    -ms-grid-columns: 30% 40px 70%;
+    grid-template-columns: 30% 70%;
+  }
+}
 .orgList #ala {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: ALA;
+}
+@media (min-width: 768px) {
+  .orgList #ala {
+    line-height: 24px;
+  }
 }
 .orgList #clp {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: CLP;
 }
+@media (min-width: 768px) {
+  .orgList #clp {
+    line-height: 24px;
+  }
+}
 .orgList #ifla {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: IFLA;
 }
+@media (min-width: 768px) {
+  .orgList #ifla {
+    line-height: 24px;
+  }
+}
 .orgList #saa {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: SAA;
+}
+@media (min-width: 768px) {
+  .orgList #saa {
+    line-height: 24px;
+  }
 }
 
 /* =============
@@ -582,10 +633,21 @@ body {
 .contact {
   margin: 5%;
 }
+@media (min-width: 768px) {
+  .contact {
+    text-align: center;
+    line-height: 0px;
+  }
+}
 
 #emailText {
   text-align: center;
   margin-top: 10%;
+}
+@media (min-width: 768px) {
+  #emailText {
+    margin-top: 5%;
+  }
 }
 
 #email {
@@ -596,6 +658,12 @@ body {
   border: solid var(--d5) 2px;
   padding: 8px;
   margin: 5%;
+}
+@media (min-width: 768px) {
+  #email {
+    width: 20%;
+    margin: 3% 39%;
+  }
 }
 
 /* =============
@@ -611,11 +679,23 @@ body {
   margin: 8px;
   text-align: left;
 }
+@media (min-width: 768px) {
+  #quote1 {
+    text-align: center;
+    margin: 5% 15%;
+  }
+}
 
 #quote2 {
   display: block;
   margin: 8px;
   text-align: right;
+}
+@media (min-width: 768px) {
+  #quote2 {
+    text-align: center;
+    margin: 0 15% 5%;
+  }
 }
 
 .philContainer {
@@ -637,6 +717,46 @@ body {
   -ms-grid-column: 3;
   grid-area: philosophy;
   padding: 3px;
+}
+@media (min-width: 768px) {
+  .philContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "meImg philosophy";
+  }
+  .philContainer #philosophy {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: philosophy;
+    margin: 20% 40% 0 5%;
+  }
+  .philContainer #meImg {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: meImg;
+    width: 50%;
+    margin: 0 0 0 40%;
+  }
+  @media (min-width: 768px) {
+  .philContainer #philosophy {
+      -ms-grid-row: 1;
+      -ms-grid-column: 2;
+  }
+  .philContainer #meImg {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+  }
+  }
+  .philContainer #meImg {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .philContainer #philosophy {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
 }
 
 /* =============

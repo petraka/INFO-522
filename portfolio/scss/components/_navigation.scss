@@ -6,43 +6,14 @@ nav{
     width: 100%;
     background-color: var(--d5);
     color: var(--l4);
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    color: var(--l4);
-    padding: 8px;
 
-
-@include md{
     a{
+        float: none;
+        display: block;
         width: 100%;
+        text-align: center;
         text-decoration: none;
         color: var(--l4);
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-areas: "homeNav" "aboutNav" "resumeNav" "assocNav" "contactNav";
-
-        #homeNav{
-            grid-area: homeNav
-        }
-
-        #aboutNav{
-            grid-area: aboutNav;
-        }
-
-        #resumeNav{
-            grid-area: resumeNav;
-        }
-
-        #assocNav{
-            grid-area: assocNav;
-        }
-
-        #contactNav{
-            grid-area: contactNav;
-        }
+        padding: 8px;
     }
-}
 }

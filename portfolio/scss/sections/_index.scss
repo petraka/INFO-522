@@ -11,12 +11,22 @@ body{
     display: block;
     margin: 8px;
     text-align: left;
+
+    @include md{
+        text-align: center;
+        margin: 5% 15%;
+    }
 }
 
 #quote2{
     display: block;
     margin: 8px;
     text-align: right;
+
+    @include md{
+        text-align: center;
+        margin: 0 15% 5%;
+    }
 }
 
 .philContainer{
@@ -35,4 +45,22 @@ body{
         grid-area: philosophy;
         padding: 3px;
     }
+
+    @include md{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "meImg philosophy";
+    
+        #philosophy{
+            grid-area: philosophy;
+            margin: 20% 40% 0 5%;
+        }
+    
+        #meImg{
+            grid-area: meImg;
+            width: 50%;
+            margin: 0 0 0 40%;
+        }
+    }   
 }
