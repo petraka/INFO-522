@@ -20,12 +20,52 @@ h2{
     border: solid var(--d5) 2px;
     padding: 8px;
     margin: 5%;
+
+    @include lg{
+        width: 20%;
+        margin: 3% 39%;
+    }
 }
 
 .resumeText{
     margin: 5%;
+
+    @include lg{
+        margin: -3% 25%;
+    }
 }
 
 #experience{
     margin-bottom: 5%;
+}
+
+#education{
+    @include md{
+        margin-top: 5%;
+    }
+}
+
+#projects{
+    margin: 5% 5% 0 5%;
+
+    @include lg{
+        margin: -3% 25%;
+    }
+}
+
+#video{
+    padding-bottom: 10%;
+    margin: 0 6%;
+
+    @include md{
+        width: 50%;
+        margin: 0 25%;
+        padding-bottom: 5%;
+    }
+
+    @include lg{
+        height: 75%;
+        width: 75%;
+        margin: 0 10%;
+    }
 }

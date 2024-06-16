@@ -405,6 +405,16 @@ nav a {
   padding: 8px;
 }
 
+.sitemap {
+  size: 50px;
+}
+.sitemap a {
+  color: var(--d5);
+}
+.sitemap a.clicked {
+  color: var(--d3);
+}
+
 /* =============
     Header
 ============= */
@@ -589,6 +599,13 @@ p {
   margin: 5% 0;
 }
 
+@media (min-width: 1024px) {
+  .assoc {
+    margin: -3% 20% 5%;
+    line-height: 0px;
+  }
+}
+
 .orgList {
   list-style-type: none;
   padding: 0;
@@ -607,6 +624,13 @@ p {
     gap: 40px;
     -ms-grid-columns: 30% 40px 70%;
     grid-template-columns: 30% 70%;
+  }
+}
+@media (min-width: 1024px) {
+  .orgList {
+    margin: 0 20%;
+    -ms-grid-columns: 50%;
+    grid-template-columns: 50%;
   }
 }
 .orgList #ala {
@@ -809,11 +833,56 @@ h2 {
   padding: 8px;
   margin: 5%;
 }
+@media (min-width: 1024px) {
+  #download {
+    width: 20%;
+    margin: 3% 39%;
+  }
+}
 
 .resumeText {
   margin: 5%;
 }
+@media (min-width: 1024px) {
+  .resumeText {
+    margin: -3% 25%;
+  }
+}
 
 #experience {
   margin-bottom: 5%;
+}
+
+@media (min-width: 768px) {
+  #education {
+    margin-top: 5%;
+  }
+}
+
+#projects {
+  margin: 5% 5% 0 5%;
+}
+@media (min-width: 1024px) {
+  #projects {
+    margin: -3% 25%;
+  }
+}
+
+#video {
+  padding-bottom: 10%;
+  margin: 0 6%;
+}
+@media (min-width: 768px) {
+  #video {
+    width: 50%;
+    margin: 0 25%;
+    padding-bottom: 5%;
+  }
+}
+@media (min-width: 1024px) {
+  #video {
+    height: 75%;
+    width: 75%;
+    margin: 0 10%;
+  }
 }

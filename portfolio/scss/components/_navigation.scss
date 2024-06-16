@@ -17,3 +17,15 @@ nav{
         padding: 8px;
     }
 }
+
+.sitemap{
+    size: 50px;
+    a{
+        color: var(--d5);
+    }
+
+    a.clicked{
+        color: var(--d3);
+    }
+
+}
