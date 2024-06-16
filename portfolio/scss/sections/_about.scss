@@ -2,9 +2,9 @@
     About
 ============= */
 
-body{
-    background-color: var(--l4);
-    color: var(--d5);
+
+p{
+    margin: 5% 0;
 }
 
 .about{
@@ -16,6 +16,7 @@ body{
     #aboutText{
         display: block;
         margin: 0 5% 5%;
+        line-height: 20px;
     }
 }
 
@@ -54,7 +55,13 @@ body{
     }
 }
 
-.bookList{
+
+.books{
+    margin: 5% 5% 0 5%;
+}
+
+#bookList{
     list-style-type: none;
-    padding: 0;
+    padding: 0px;
+    margin: 3% 5%;
 }

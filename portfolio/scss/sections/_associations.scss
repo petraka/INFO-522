@@ -2,20 +2,25 @@
     Associations
 ============= */
 
-body{
-    background-color: var(--l4);
-    color: var(--d5)
+.assoc{
+    margin: 5%;
+}
+
+p{
+    margin: 5% 0;
 }
 
 .orgList{
     list-style-type: none;
     padding: 0;
+    margin: 5%;
+    gap: 24px;
 
     display: grid;
-    grid-template-columns: 50%;
+    grid-template-columns: 35% 65%;
     grid-template-areas:
-    'CLP ALA'
-    'IFLA SAA';
+    "SAA CLP"
+    "ALA IFLA";
 
     #ala{
         grid-area: ALA;

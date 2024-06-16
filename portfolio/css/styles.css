@@ -341,6 +341,11 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: var(--l4);
+  color: var(--d5);
+}
+
 /* =============
     Typography
 ============= */
@@ -446,9 +451,8 @@ footer {
 /* =============
     About
 ============= */
-body {
-  background-color: var(--l4);
-  color: var(--d5);
+p {
+  margin: 5% 0;
 }
 
 .about #pghImg {
@@ -458,6 +462,7 @@ body {
 .about #aboutText {
   display: block;
   margin: 0 5% 5%;
+  line-height: 20px;
 }
 
 .media {
@@ -497,46 +502,57 @@ body {
   grid-area: pokemon;
 }
 
-.bookList {
+.books {
+  margin: 5% 5% 0 5%;
+}
+
+#bookList {
   list-style-type: none;
-  padding: 0;
+  padding: 0px;
+  margin: 3% 5%;
 }
 
 /* =============
     Associations
 ============= */
-body {
-  background-color: var(--l4);
-  color: var(--d5);
+.assoc {
+  margin: 5%;
+}
+
+p {
+  margin: 5% 0;
 }
 
 .orgList {
   list-style-type: none;
   padding: 0;
+  margin: 5%;
+  gap: 24px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50%;
-  grid-template-columns: 50%;
-      grid-template-areas: "CLP ALA" "IFLA SAA";
+  -ms-grid-columns: 35% 24px 65%;
+  grid-template-columns: 35% 65%;
+  -ms-grid-rows: auto 24px auto;
+      grid-template-areas: "SAA CLP" "ALA IFLA";
 }
 .orgList #ala {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: ALA;
 }
 .orgList #clp {
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  -ms-grid-column: 3;
   grid-area: CLP;
 }
 .orgList #ifla {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
   grid-area: IFLA;
 }
 .orgList #saa {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: SAA;
 }
 
@@ -554,6 +570,39 @@ body {
 body {
   background-color: var(--l4);
   color: var(--d5);
+}
+
+#quote1 {
+  display: block;
+  margin: 8px;
+  text-align: left;
+}
+
+#quote2 {
+  display: block;
+  margin: 8px;
+  text-align: right;
+}
+
+.philContainer {
+  margin: 0 8px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 16px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "meImg philosophy";
+  gap: 16px;
+}
+.philContainer #meImg {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: meImg;
+}
+.philContainer #philosophy {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: philosophy;
+  padding: 3px;
 }
 
 /* =============

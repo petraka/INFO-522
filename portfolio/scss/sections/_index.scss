@@ -6,3 +6,33 @@ body{
     background-color: var(--l4);
     color: var(--d5)
 }
+
+#quote1{
+    display: block;
+    margin: 8px;
+    text-align: left;
+}
+
+#quote2{
+    display: block;
+    margin: 8px;
+    text-align: right;
+}
+
+.philContainer{
+    margin: 0 8px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "meImg philosophy";
+    gap: 16px;
+
+    #meImg{
+        grid-area: meImg;
+    }
+
+    #philosophy{
+        grid-area: philosophy;
+        padding: 3px;
+    }
+}
