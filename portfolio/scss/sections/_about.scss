@@ -18,7 +18,16 @@ p{
         margin: 0 5% 5%;
         line-height: 20px;
     }
+
+    @include lg{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: "#pghImg #aboutText";
+        align-items: center;
+        margin: 5% 5% 0 5%;
+    }
 }
+
 
 .media{
     margin: 5%;
@@ -64,6 +73,10 @@ p{
         "sleepToken ghibli";
 
         align-items: center;
+    }
+
+    @include lg{
+        margin: 0 20%;
     }
 }
 

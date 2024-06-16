@@ -431,6 +431,16 @@ header {
   -ms-grid-column: 2;
   grid-area: myName;
 }
+@media (min-width: 768px) {
+  .header {
+    margin-left: 5%;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    margin-left: 10%;
+  }
+}
 
 #myLogo {
   border-radius: 20px;
@@ -470,6 +480,19 @@ p {
   display: block;
   margin: 0 5% 5%;
   line-height: 20px;
+}
+@media (min-width: 1024px) {
+  .about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2];
+    grid-template-columns: repeat(2, 50%);
+        grid-template-areas: "#pghImg #aboutText";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 5% 5% 0 5%;
+  }
 }
 
 .media {
@@ -537,6 +560,11 @@ p {
   .mediaList #pokemon {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .mediaList {
+    margin: 0 20%;
   }
 }
 
