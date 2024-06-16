@@ -6,3 +6,22 @@ body{
     background-color: var(--l4);
     color: var(--d5)
 }
+
+.contact{
+    margin: 5%;
+}
+
+#emailText{
+    text-align: center;
+    margin-top: 10%;
+}
+
+#email{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--d3);
+    border: solid var(--d5) 2px;
+    padding: 8px;
+    margin: 5%;
+}

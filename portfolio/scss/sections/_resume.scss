@@ -6,3 +6,26 @@ body{
     background-color: var(--l4);
     color: var(--d5)
 }
+
+h2{
+    text-align: center;
+    margin: 5%;
+}
+
+#download{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--d3);
+    border: solid var(--d5) 2px;
+    padding: 8px;
+    margin: 5%;
+}
+
+.resumeText{
+    margin: 5%;
+}
+
+#experience{
+    margin-bottom: 5%;
+}

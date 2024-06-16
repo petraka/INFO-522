@@ -3,5 +3,23 @@
 ============= */
 
 footer{
-    background-color: var(--l5);
+    background-color: var(--d5);
+    color: var(--l4);
+    width: 100%;
+
+
+    // a{
+    //     text-decoration: none;
+    //     color: var(--l4);
+    //     display: grid;
+    //     grid-template-columns: repeat(4, 1fr);
+    //     grid-template-areas: "siteMap drexel htmlVal cssVal";
+    //     width: 100%;
+
+    // }
+}
+
+#copyright{
+    text-align: center;
+    padding: 16px
 }

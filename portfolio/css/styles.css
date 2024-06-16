@@ -394,8 +394,6 @@ nav {
   width: 100%;
   background-color: var(--d5);
   color: var(--l4);
-}
-nav a {
   float: none;
   display: block;
   width: 100%;
@@ -403,6 +401,16 @@ nav a {
   text-decoration: none;
   color: var(--l4);
   padding: 8px;
+}
+@media (min-width: 768px) {
+  nav a {
+    text-decoration: none;
+    color: var(--l4);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+  }
 }
 
 /* =============
@@ -445,7 +453,14 @@ header {
     Footer
 ============= */
 footer {
-  background-color: var(--l5);
+  background-color: var(--d5);
+  color: var(--l4);
+  width: 100%;
+}
+
+#copyright {
+  text-align: center;
+  padding: 16px;
 }
 
 /* =============
@@ -527,16 +542,16 @@ p {
   list-style-type: none;
   padding: 0;
   margin: 5%;
-  gap: 24px;
+  gap: 20px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 35% 24px 65%;
+  -ms-grid-columns: 35% 20px 65%;
   grid-template-columns: 35% 65%;
-  -ms-grid-rows: auto 24px auto;
-      grid-template-areas: "SAA CLP" "ALA IFLA";
+  -ms-grid-rows: auto 20px auto;
+      grid-template-areas: "ALA CLP" "SAA IFLA";
 }
 .orgList #ala {
-  -ms-grid-row: 3;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: ALA;
 }
@@ -551,7 +566,7 @@ p {
   grid-area: IFLA;
 }
 .orgList #saa {
-  -ms-grid-row: 1;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: SAA;
 }
@@ -562,6 +577,25 @@ p {
 body {
   background-color: var(--l4);
   color: var(--d5);
+}
+
+.contact {
+  margin: 5%;
+}
+
+#emailText {
+  text-align: center;
+  margin-top: 10%;
+}
+
+#email {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--d3);
+  border: solid var(--d5) 2px;
+  padding: 8px;
+  margin: 5%;
 }
 
 /* =============
@@ -611,4 +645,27 @@ body {
 body {
   background-color: var(--l4);
   color: var(--d5);
+}
+
+h2 {
+  text-align: center;
+  margin: 5%;
+}
+
+#download {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--d3);
+  border: solid var(--d5) 2px;
+  padding: 8px;
+  margin: 5%;
+}
+
+.resumeText {
+  margin: 5%;
+}
+
+#experience {
+  margin-bottom: 5%;
 }
