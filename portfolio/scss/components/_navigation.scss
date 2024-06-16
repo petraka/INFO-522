@@ -17,11 +17,32 @@ nav{
 
 @include md{
     a{
+        width: 100%;
         text-decoration: none;
         color: var(--l4);
         display: grid;
-        grid-template-columns: auto;
-        
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: "homeNav" "aboutNav" "resumeNav" "assocNav" "contactNav";
+
+        #homeNav{
+            grid-area: homeNav
+        }
+
+        #aboutNav{
+            grid-area: aboutNav;
+        }
+
+        #resumeNav{
+            grid-area: resumeNav;
+        }
+
+        #assocNav{
+            grid-area: assocNav;
+        }
+
+        #contactNav{
+            grid-area: contactNav;
+        }
     }
 }
 }
