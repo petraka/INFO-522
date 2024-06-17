@@ -351,7 +351,6 @@ body {
 ============= */
 body {
   font-family: "Cabin", sans-serif;
-  font-optical-sizing: auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -465,6 +464,15 @@ footer {
   background-color: var(--d5);
   color: var(--l4);
   width: 100%;
+}
+footer a {
+  float: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: var(--l4);
+  padding: 8px;
 }
 
 #copyright {

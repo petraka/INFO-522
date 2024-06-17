@@ -8,15 +8,15 @@ footer{
     width: 100%;
 
 
-    // a{
-    //     text-decoration: none;
-    //     color: var(--l4);
-    //     display: grid;
-    //     grid-template-columns: repeat(4, 1fr);
-    //     grid-template-areas: "siteMap drexel htmlVal cssVal";
-    //     width: 100%;
-
-    // }
+    a{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: var(--l4);
+        padding: 8px;
+    }
 }
 
 #copyright{
